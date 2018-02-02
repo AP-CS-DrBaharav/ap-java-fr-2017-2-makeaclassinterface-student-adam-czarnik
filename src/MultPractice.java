@@ -2,6 +2,24 @@
 
 // Fill in you code here, and please put the below within your declared class.
 // This will allow you test your code.
+public abstract class MultPractice implements StudyPractice {
+    
+    private int fint;
+    private int sint;
+    int prob = 0;
+    
+    public String getProblem(int one, int two) {
+        fint = one;
+        sint = two;
+        return fint + " times " + sint;
+    }
+    
+    public void nextProblem(){
+        prob++;
+        sint = sint + prob;
+    }
+    
+}
   
   
   public static void main(String[] args)
