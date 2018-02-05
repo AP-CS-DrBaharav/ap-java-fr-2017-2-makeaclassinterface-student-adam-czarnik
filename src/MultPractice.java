@@ -6,7 +6,6 @@ public class MultPractice implements StudyPractice {
     
     private int fint;
     private int sint;
-    int prob = 0;
     
     public MultPractice(int first, int second) {
         fint = first;
@@ -18,8 +17,7 @@ public class MultPractice implements StudyPractice {
     }
     
     public void nextProblem(){
-        prob++;
-        sint = sint + prob;
+        sint = sint + 1;
     }
     
 
