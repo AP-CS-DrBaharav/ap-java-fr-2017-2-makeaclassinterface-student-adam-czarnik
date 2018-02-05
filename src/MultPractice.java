@@ -2,15 +2,18 @@
 
 // Fill in you code here, and please put the below within your declared class.
 // This will allow you test your code.
-public abstract class MultPractice implements StudyPractice {
+public class MultPractice implements StudyPractice {
     
     private int fint;
     private int sint;
     int prob = 0;
     
-    public String getProblem(int one, int two) {
-        fint = one;
-        sint = two;
+    public MultPractice(int first, int second) {
+        fint = first;
+        sint = second;
+    }
+    
+    public String getProblem() {
         return fint + " times " + sint;
     }
     
@@ -19,7 +22,7 @@ public abstract class MultPractice implements StudyPractice {
         sint = sint + prob;
     }
     
-}
+
   
   
   public static void main(String[] args)
@@ -43,4 +46,5 @@ public abstract class MultPractice implements StudyPractice {
     p2.nextProblem();
     System.out.println(p2.getProblem()); // 4 TIMES 16
   }
+}
 
